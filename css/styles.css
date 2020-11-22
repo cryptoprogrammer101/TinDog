@@ -1,0 +1,225 @@
+body {
+  /* set all the text to the Montserrat font */
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* make the text more bold */
+  font-weight: 900;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  /* specify the weight of the font to use */
+  font-weight: 900;
+  /* increase the font size */
+  font-size: 3.5rem;
+  /* increase the line height */
+  line-height: 1.5;
+}
+
+.section-heading {
+  /* set the font size */
+  font-size: 3rem;
+  /* set the line height */
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+  /* add 7% margin on the top and bottom, and 15% margin on the left and right */
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  /* change the background color of the title section to pink */
+  background-color: #ff4c68;
+  /* set the text color to white */
+  color: #fff;
+}
+
+.white-section {
+  /* set the background color to white (transparent by default) */
+  background-color: #fff;
+}
+
+/* Navigation bar */
+.navbar {
+  /* move everything below the nav bar down by only adding padding on the bottom */
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  /* set the font to Ubuntu */
+  font-family: "Ubuntu";
+  /* increase the font size */
+  font-size: 2.5rem;
+  /* bold the text */
+  font-weight: bold;
+}
+
+.nav-item {
+  /* give padding of 18 pixels on the bottom and right */
+  padding: 0 0 18px 18px;
+}
+
+.nav-link {
+  /* increase the font-size */
+  font-size: 1.5rem;
+  /* increase the font-weight */
+  font-weight: 400;
+}
+
+/* Download buttons */
+.download-button {
+  /* move the buttons */
+  margin: 5% 3% 5% 0;
+}
+
+/* Title section */
+
+/* selects the container-fluid class INSIDE the section with an id of title */
+#title .container-fluid {
+  /* put 3% padding on tpo, 15% left & right, and 7% bottom */
+  padding: 3% 15% 7%;
+  /* left align the text */
+  text-align: left;
+}
+
+/* Title image */
+.title-image {
+  /* shrink the size of the image */
+  width: 60%;
+  /* rotate the image to the right 25 degrees */
+  transform: rotate(25deg);
+  /* set the position to absolute for the z-index to work */
+  position: absolute;
+  /* make the image 30% from the right of the menu */
+  right: 30%;
+}
+
+/* Features section */
+#features {
+  /* set the position to relative for the section to be in front of the image */
+  /* relative also makes sure that the flow of HTML is preserved */
+  /* we do not need to specify the z-index due to HTML rules*/
+  /* since feature section follows title image, feature section BY DEFAULT will go on top of image */
+  position: relative;
+}
+
+.feature-title {
+  /* set the font size of the feature title */
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  /* increase the padding */
+  padding: 5%;
+}
+
+.icon {
+  /* set the color of the image */
+  color: #ef8172;
+  /* give it a bottom margin */
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  /* make it change color when it is hovered on */
+  color: #ff4c68;
+}
+
+/* Testimontal section */
+#testimonials {
+  /* set the background color of the section */
+  background-color: #ef8172;
+}
+
+#press {
+  /* set the background color of the section */
+  background-color: #ef8172;
+  /* add padding on the bottom */
+  padding-bottom: 3%;
+}
+
+.testimonial-text {
+  /* set the font size */
+  font-size: 3rem;
+  /* set the line height */
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.press-logo {
+  /* decrease the size of the images */
+  width: 15%;
+  /* put a margin of 20px from the top and left and right, and 50px from the bottom */
+  margin: 20px 20px 50px;
+}
+
+/* Pricing section */
+#pricing {
+  /* increase the padding */
+  padding: 100px;
+}
+
+.price-text {
+  /* set the font size */
+  font-size: 3rem;
+  /* set the line height */
+  line-height: 1.5;
+}
+
+.pricing-col {
+  /* adding 3% padding on top and bottom and 2% on left and right */
+  padding: 3% 2%;
+}
+
+/* Call to action section */
+
+.cta-heading {
+  /* specify the weight of the font to use */
+  font-weight: 900;
+  /* increase the font size */
+  font-size: 3.5rem;
+  /* increase the line height */
+  line-height: 1.5;
+}
+
+/* Footer section */
+.copyright {
+  color: #aba4a7;
+}
+
+.social-icon {
+  /* give a margian of 20 px top/bottom and 10 px left/right */
+  margin: 20px 10px;
+}
+
+/* Media query breakpoints */
+/* when the screen width is less than 1276 pixels */
+@media (max-width: 1276px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    /* change the position back to static (it will not get cut off by any other objects) */
+    position: static;
+    /* make the image vertical, not rotated */
+    transform: rotate(0);
+  }
+}
